@@ -1,0 +1,189 @@
+{
+  "cases": [
+    {
+      "case_id": "CUSTOM-001",
+      "policy_id": "USGIC-CSC-2017-2018",
+      "policy_start_date": "2025-06-01",
+      "claim_date": "2025-06-20",
+      "sum_insured_inr": 500000,
+      "continuous_coverage_months": 0,
+      "prior_insurer_continuous_years": 0,
+      "patient": { "age": 38 },
+      "hospital": {
+        "name": "City General Hospital",
+        "network_provider": true
+      },
+      "treatment": {
+        "type": "inpatient",
+        "admission_hours": 48,
+        "diagnosis": "Acute viral fever with dehydration",
+        "procedure": "Intravenous rehydration and supportive care",
+        "pre_existing": false,
+        "experimental": false
+      },
+      "expenses_inr": {
+        "room": 12000,
+        "doctor_fees": 8000,
+        "medicines_diagnostics": 15000,
+        "pre_hospitalization": 0,
+        "post_hospitalization": 2000,
+        "ambulance": 800
+      },
+      "documents": [
+        "claim_form",
+        "discharge_summary",
+        "itemized_bill",
+        "doctor_prescription"
+      ],
+      "task": "Determine whether the hospitalization is admissible, identify applicable policy limits, and explain any deductions."
+    },
+    {
+      "case_id": "CUSTOM-002",
+      "policy_id": "USGIC-CSC-2017-2018",
+      "policy_start_date": "2023-01-01",
+      "claim_date": "2026-03-10",
+      "sum_insured_inr": 500000,
+      "continuous_coverage_months": 38,
+      "prior_insurer_continuous_years": 0,
+      "patient": { "age": 29 },
+      "hospital": {
+        "name": "Aesthetic Care Center",
+        "network_provider": false
+      },
+      "treatment": {
+        "type": "inpatient",
+        "admission_hours": 24,
+        "diagnosis": "Nasal deformity",
+        "procedure": "Rhinoplasty for cosmetic correction",
+        "pre_existing": false,
+        "experimental": false
+      },
+      "expenses_inr": {
+        "room": 25000,
+        "doctor_fees": 80000,
+        "medicines_diagnostics": 20000,
+        "pre_hospitalization": 0,
+        "post_hospitalization": 5000,
+        "ambulance": 0
+      },
+      "documents": [
+        "claim_form",
+        "discharge_summary",
+        "itemized_bill",
+        "doctor_prescription"
+      ],
+      "task": "Determine whether the hospitalization is admissible, identify applicable policy limits, and explain any deductions."
+    },
+    {
+      "case_id": "CUSTOM-003",
+      "policy_id": "USGIC-CSC-2017-2018",
+      "policy_start_date": "2022-01-01",
+      "claim_date": "2026-02-14",
+      "sum_insured_inr": 500000,
+      "continuous_coverage_months": 50,
+      "prior_insurer_continuous_years": 0,
+      "patient": { "age": 45 },
+      "hospital": {
+        "name": "Sunrise Multispeciality",
+        "network_provider": true
+      },
+      "treatment": {
+        "type": "inpatient",
+        "admission_hours": 72,
+        "diagnosis": "Acute cholecystitis",
+        "procedure": "Laparoscopic cholecystectomy",
+        "pre_existing": false,
+        "experimental": false
+      },
+      "expenses_inr": {
+        "room": 24000,
+        "doctor_fees": 35000,
+        "medicines_diagnostics": 45000,
+        "pre_hospitalization": 4000,
+        "post_hospitalization": 6000,
+        "ambulance": 900
+      },
+      "documents": [
+        "claim_form",
+        "discharge_summary",
+        "itemized_bill",
+        "doctor_prescription",
+        "diagnostic_report"
+      ],
+      "task": "Determine whether the hospitalization is admissible, identify applicable policy limits, and explain any deductions."
+    },
+    {
+      "case_id": "CUSTOM-004",
+      "policy_id": "USGIC-CSC-2017-2018",
+      "policy_start_date": "2023-06-01",
+      "claim_date": "2026-04-05",
+      "sum_insured_inr": 500000,
+      "continuous_coverage_months": 34,
+      "prior_insurer_continuous_years": 0,
+      "patient": { "age": 52 },
+      "hospital": {
+        "name": "Premium Care Hospital",
+        "network_provider": true
+      },
+      "treatment": {
+        "type": "inpatient",
+        "admission_hours": 120,
+        "diagnosis": "Coronary artery disease",
+        "procedure": "Coronary angioplasty with stent placement",
+        "pre_existing": false,
+        "experimental": false
+      },
+      "expenses_inr": {
+        "room": 150000,
+        "doctor_fees": 120000,
+        "medicines_diagnostics": 180000,
+        "pre_hospitalization": 15000,
+        "post_hospitalization": 20000,
+        "ambulance": 2500
+      },
+      "documents": [
+        "claim_form",
+        "discharge_summary",
+        "itemized_bill",
+        "doctor_prescription",
+        "diagnostic_report"
+      ],
+      "task": "Determine whether the hospitalization is admissible, identify applicable policy limits, and explain any deductions."
+    },
+    {
+      "case_id": "CUSTOM-005",
+      "policy_id": "USGIC-CSC-2017-2018",
+      "policy_start_date": "2024-01-01",
+      "claim_date": "2026-05-22",
+      "sum_insured_inr": 500000,
+      "continuous_coverage_months": 28,
+      "prior_insurer_continuous_years": 0,
+      "patient": { "age": 36 },
+      "hospital": {
+        "name": "Regional Medical Center",
+        "network_provider": true
+      },
+      "treatment": {
+        "type": "inpatient",
+        "admission_hours": 36,
+        "diagnosis": "Acute appendicitis",
+        "procedure": "Appendectomy",
+        "pre_existing": false,
+        "experimental": false
+      },
+      "expenses_inr": {
+        "room": 18000,
+        "doctor_fees": 25000,
+        "medicines_diagnostics": 35000,
+        "pre_hospitalization": 3000,
+        "post_hospitalization": 4000,
+        "ambulance": 700
+      },
+      "documents": [
+        "claim_form",
+        "discharge_summary"
+      ],
+      "task": "Determine whether the hospitalization is admissible, identify applicable policy limits, and explain any deductions."
+    }
+  ]
+}

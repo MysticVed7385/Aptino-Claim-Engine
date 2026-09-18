@@ -1,0 +1,71 @@
+{
+  "PUB-001": {
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "rationale": "Acute appendicitis / appendectomy is a standard inpatient procedure within scope. 14 months of continuous coverage clears the 30-day initial waiting period (POLICY-00030). pre_existing=false so the 48-month pre-existing exclusion (POLICY-00025) does not apply. The 40% sub-limit on medicines/diagnostics (POLICY-00022) applies to the 90,000 INR medicines component, and the ambulance charge of 1,200 INR exceeds the 1% of sum insured / 1,000 INR cap (POLICY-00026). Decision is admissible with limits."
+  },
+  "PUB-002": {
+    "expected_decision": "NEEDS_REVIEW",
+    "rationale": "Policy incepted 2026-01-01, claim filed 2026-01-20 — 19 days. continuous_coverage_months=0 and no prior continuous coverage. The 30-day initial waiting period (POLICY-00030) has not elapsed. The task explicitly asks whether the claim falls within the initial waiting period. A safe final decision is not possible until the waiting-period position is confirmed."
+  },
+  "PUB-003": {
+    "expected_decision": "NEEDS_REVIEW",
+    "rationale": "Diagnosis is a pre-existing thyroid disorder (treatment.pre_existing=true) with only 27 months of continuous coverage. The policy excludes pre-existing diseases until 48 months of continuous coverage have elapsed (POLICY-00025). 27 < 48 means the exclusion applies, but the case is framed as a waiting-period assessment and the appropriate behavior is to flag for review rather than issue a hard rejection without confirming whether any portability credit applies (prior_insurer_continuous_years=0 here, but the case asks for a waiting-period assessment)."
+  },
+  "PUB-004": {
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "rationale": "Domiciliary hospitalization where hospital_room_unavailable=true. The policy permits domiciliary hospitalization subject to a maximum aggregate limit (POLICY-00022 note NB2). Documents are complete. The applicable sub-limit caps the payable amount, so the decision is admissible with limits rather than a plain admittance."
+  },
+  "PUB-005": {
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "rationale": "Cataract surgery as a day-care procedure under 24 hours. The policy's day-care provisions cover specified procedures including cataract surgery without requiring overnight admission. 29 months continuous coverage clears all waiting periods. The claim is admissible subject to the day-care procedure limits and the 40% medicines/diagnostics sub-limit (POLICY-00022)."
+  },
+  "PUB-006": {
+    "expected_decision": "NEEDS_REVIEW",
+    "rationale": "Only claim_form and discharge_summary submitted. The evidence_context fields hospital_registered and medical_necessity_confirmed are both null — the policy requires the hospital to meet its definition of a registered Hospital and medical necessity to be established. The task explicitly asks what additional evidence is required. A safe final decision cannot be made on the current record."
+  },
+  "PUB-007": {
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "rationale": "Cancer treatment on a 10,00,000 INR sum insured, 31 months continuous coverage. The task explicitly requires applying category-specific limits. Room rent of 80,000 INR and medicines/diagnostics of 5,00,000 INR will be capped by the policy's room-rent sub-limit and the 40% medicines/diagnostics sub-limit (POLICY-00022). The claim is admissible subject to these sub-limits and proportionate deductions."
+  },
+  "PUB-008": {
+    "expected_decision": "NOT_ADMISSIBLE",
+    "rationale": "Diagnosis is 'Cosmetic condition' with procedure 'Cosmetic surgery'. The policy explicitly excludes cosmetic treatment from coverage. Even with 32 months of continuous coverage and complete documentation, cosmetic procedures are outside the scope of cover."
+  },
+  "PUB-009": {
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "rationale": "Appendectomy, 32 months continuous coverage, complete documentation. Pre-hospitalization 30 days before and post-hospitalization 60 days after are within policy time windows (policy permits up to 30 days pre and 60 days post). The 40% medicines/diagnostics sub-limit (POLICY-00022) applies to the 1,00,000 INR medicines component and the ambulance charge of 800 INR is within the 1,000 INR cap (POLICY-00026). Admissible with limits."
+  },
+  "PUB-010": {
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "rationale": "Cataract day-care surgery on a fresh policy (2026-01-01) with only 8 months continuous coverage, but 1 year of prior continuous coverage with another Indian insurer and portability records received. The policy allows portability credit for time-bound exclusions (POLICY-00010). Prior year of continuous coverage satisfies the 30-day initial waiting period (POLICY-00030). Day-care cataract is covered. Admissible subject to day-care and medicines/diagnostics sub-limits."
+  },
+  "PUB-011": {
+    "expected_decision": "NEEDS_REVIEW",
+    "rationale": "Hospital is not a network provider, and the supplied evidence does not establish that it meets the policy's definition of a Hospital (evidence_context.hospital_registered=null, hospital_minimum_criteria_documented=false). Only claim_form and itemized_bill submitted — no discharge summary or prescription. The task explicitly asks whether a final decision is possible when the facility's status is unestablished. The correct behavior is to abstain."
+  },
+  "PUB-012": {
+    "expected_decision": "NOT_ADMISSIBLE",
+    "rationale": "Treatment.experimental=true and the diagnosis/procedure are explicitly labelled experimental. The policy excludes experimental or unproven treatments from cover. Even with 32 months of continuous coverage, complete documentation, and a network hospital, experimental treatment is outside the scope of cover."
+  },
+
+  "CUSTOM-001": {
+    "expected_decision": "NEEDS_REVIEW",
+    "rationale": "Claim filed 19 days after policy inception. The 30-day initial waiting period (POLICY-00030) has not elapsed and no continuous prior coverage is declared (continuous_coverage_months=0, prior_insurer_continuous_years=0). A safe admissibility conclusion is not possible without confirming the waiting-period position."
+  },
+  "CUSTOM-002": {
+    "expected_decision": "NOT_ADMISSIBLE",
+    "rationale": "Rhinoplasty performed for cosmetic correction falls within the policy's exclusion for cosmetic treatment. The policy permits cosmetic procedures only when reconstructive necessity is documented, which is absent here."
+  },
+  "CUSTOM-003": {
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "rationale": "Laparoscopic cholecystectomy is a standard inpatient procedure within scope of cover. 50 months of continuous coverage clears both the 30-day initial waiting period (POLICY-00030) and the 48-month pre-existing disease exclusion (POLICY-00025). Complete documentation present. The 40% sub-limit on medicines/diagnostics (POLICY-00022) applies to the medicines component."
+  },
+  "CUSTOM-004": {
+    "expected_decision": "ADMISSIBLE_WITH_LIMITS",
+    "rationale": "Coronary angioplasty with stent is within coverage, but room rent of 1,50,000 INR against a 5,00,000 INR sum insured exceeds the policy's room-rent sub-limit, triggering proportionate deduction across associated expenses. Ambulance charge of 2,500 INR exceeds the 1% of sum insured / 1,000 INR cap (POLICY-00026) and must be reduced."
+  },
+  "CUSTOM-005": {
+    "expected_decision": "NEEDS_REVIEW",
+    "rationale": "Only claim_form and discharge_summary submitted. The policy requires an itemized bill and doctor prescription for inpatient claims. Missing evidence prevents a safe admissibility determination."
+  }
+}
